@@ -1,0 +1,42 @@
+{
+	"name": "cups-driver-builder",
+	"version": "0.0.0",
+	"description": "CUPS driver builder for CUPS driver libs",
+	"license": "MIT",
+	"repository": "taoyuan/cups-driver-builder",
+	"author": {
+		"name": "towyuan",
+		"email": "towyuan@outlook.com",
+		"url": "github.com/taoyuan"
+	},
+	"engines": {
+		"node": ">=8"
+	},
+	"scripts": {
+		"test": "xo && mocha"
+	},
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"cups",
+		"driver",
+		"resolver"
+	],
+	"dependencies": {
+		"bluebird": "^3.5.0",
+		"bower": "^1.8.0",
+		"fs-extra": "^4.0.1",
+		"handlebars": "^4.0.10",
+		"lodash": "^4.17.4",
+		"node-dir": "^0.1.17",
+		"yamljs": "^0.3.0"
+	},
+	"devDependencies": {
+		"@types/chai": "^4.0.3",
+		"@types/fs-extra": "^4.0.0",
+		"chai": "^4.1.1",
+		"mocha": "^3.5.0",
+		"xo": "^0.18.2"
+	}
+}
