@@ -7,11 +7,11 @@ describe('utils', function () {
 
 	it('Should fetch to specified dir', function () {
 		const dir = path.join(__dirname, 'tmp');
-		return utils.fetch('taoyuan/cups-driver-libs', {dir}).then(installed => {
+		return utils.fetch('oodolabs/cups-drivers', {dir}).then(installed => {
 			console.log(installed);
 			assert.ok(installed);
 			assert.include(installed.canonicalDir, dir);
-			assert.nestedPropertyVal(installed, 'endpoint.name', 'cups-driver-libs');
+			assert.nestedPropertyVal(installed, 'endpoint.name', 'cups-drivers');
 		});
 	});
 });

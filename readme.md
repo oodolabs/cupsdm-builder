@@ -1,4 +1,4 @@
-# cups-driver-builder [![Build Status](https://travis-ci.org/taoyuan/cups-driver-builder.svg?branch=master)](https://travis-ci.org/taoyuan/cups-driver-builder)
+# cupsdm-builder [![Build Status](https://travis-ci.org/taoyuan/cupsdm-builder.svg?branch=master)](https://travis-ci.org/taoyuan/cupsdm-builder)
 
 > CUPS driver builder for CUPS driver libs
 
@@ -6,17 +6,17 @@
 ## Install
 
 ```
-$ npm install cups-driver-builder
+$ npm install cupsdm-builder
 ```
 
 
 ## Usage
 
 ```js
-const Builder = require('cups-driver-builder');
+const Builder = require('cupsdm-builder');
 
-Builder.build('taoyuan/cups-driver-libs', {
-	scriptUriTemplate: 'https://raw.githubusercontent.com/taoyuan/cups-driver-libs/master/{{{maker}}}/{{{driver}}}/{{{script}}}'
+Builder.build('oodolabs/cups-drivers', {
+	scriptUriTemplate: 'https://raw.githubusercontent.com/oodolabs/cups-drivers/master/{{{maker}}}/{{{driver}}}/{{{script}}}'
 }).then(drivers => {
 	console.log(drivers);
 	/* -->
@@ -24,16 +24,16 @@ Builder.build('taoyuan/cups-driver-libs', {
 		{ model: 'Brother BrGenPrintML2 for CUPS',
       maker: 'Brother',
       driver: 'BrGenPrintML2',
-      scripts: { install: 'https://raw.githubusercontent.com/taoyuan/cups-driver-libs/master/Brother/BrGenPrintML2/install.sh' } },
+      scripts: { install: 'https://raw.githubusercontent.com/oodolabs/cups-drivers/master/Brother/BrGenPrintML2/install.sh' } },
     { model: 'Brother DCP-1618W',
       maker: 'Brother',
       driver: 'BrGenPrintML2',
-      scripts: { install: 'https://raw.githubusercontent.com/taoyuan/cups-driver-libs/master/Brother/BrGenPrintML2/install.sh' },
+      scripts: { install: 'https://raw.githubusercontent.com/oodolabs/cups-drivers/master/Brother/BrGenPrintML2/install.sh' },
       driverModel: 'Brother BrGenPrintML2 for CUPS' },
     { model: 'HP Deskjet 5820 Series, hpcups 3.16.11',
       maker: 'HP',
       driver: 'hplip',
-      scripts: { install: 'https://raw.githubusercontent.com/taoyuan/cups-driver-libs/master/HP/hplip/install.sh' } },
+      scripts: { install: 'https://raw.githubusercontent.com/oodolabs/cups-drivers/master/HP/hplip/install.sh' } },
     ... 
   ]
   */
@@ -69,7 +69,7 @@ The scripts of install and uninstall urls generation template based on [handleba
 For example:
 
 ```
-https://raw.githubusercontent.com/taoyuan/cups-driver-libs/master/{{{maker}}}/{{{driver}}}/{{{script}}}
+https://raw.githubusercontent.com/oodolabs/cups-drivers/master/{{{maker}}}/{{{driver}}}/{{{script}}}
 ```
 
 ### .build()
@@ -81,16 +81,16 @@ Build CUPS drivers libraries to flat json format like:
 		{ model: 'Brother BrGenPrintML2 for CUPS',
       maker: 'Brother',
       driver: 'BrGenPrintML2',
-      scripts: { install: 'https://raw.githubusercontent.com/taoyuan/cups-driver-libs/master/Brother/BrGenPrintML2/install.sh' } },
+      scripts: { install: 'https://raw.githubusercontent.com/oodolabs/cups-drivers/master/Brother/BrGenPrintML2/install.sh' } },
     { model: 'Brother DCP-1618W',
       maker: 'Brother',
       driver: 'BrGenPrintML2',
-      scripts: { install: 'https://raw.githubusercontent.com/taoyuan/cups-driver-libs/master/Brother/BrGenPrintML2/install.sh' },
+      scripts: { install: 'https://raw.githubusercontent.com/oodolabs/cups-drivers/master/Brother/BrGenPrintML2/install.sh' },
       driverModel: 'Brother BrGenPrintML2 for CUPS' },
     { model: 'HP Deskjet 5820 Series, hpcups 3.16.11',
       maker: 'HP',
       driver: 'hplip',
-      scripts: { install: 'https://raw.githubusercontent.com/taoyuan/cups-driver-libs/master/HP/hplip/install.sh' } },
+      scripts: { install: 'https://raw.githubusercontent.com/oodolabs/cups-drivers/master/HP/hplip/install.sh' } },
     ... 
 ]
 ```
