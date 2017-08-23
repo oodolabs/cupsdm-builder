@@ -13,7 +13,7 @@
 		"node": ">=8"
 	},
 	"scripts": {
-		"test": "xo && mocha"
+		"test": "xo --env=node --env=mocha && mocha"
 	},
 	"files": [
 		"index.js"

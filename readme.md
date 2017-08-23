@@ -16,11 +16,11 @@ $ npm install cupsdm-builder
 const Builder = require('cupsdm-builder');
 
 Builder.build('oodolabs/cups-drivers', {
-	scriptUriTemplate: 'https://raw.githubusercontent.com/oodolabs/cups-drivers/master/{{{maker}}}/{{{driver}}}/{{{script}}}'
+  scriptUriTemplate: 'https://raw.githubusercontent.com/oodolabs/cups-drivers/master/{{{maker}}}/{{{driver}}}/{{{script}}}'
 }).then(drivers => {
-	console.log(drivers);
-	/* -->
-	[ 
+  console.log(drivers);
+  /* -->
+  [ 
 		{ model: 'Brother BrGenPrintML2 for CUPS',
       maker: 'Brother',
       driver: 'BrGenPrintML2',
@@ -77,21 +77,21 @@ https://raw.githubusercontent.com/oodolabs/cups-drivers/master/{{{maker}}}/{{{dr
 Build CUPS drivers libraries to flat json format like:
 
 ```js
-[ 
-		{ model: 'Brother BrGenPrintML2 for CUPS',
-      maker: 'Brother',
-      driver: 'BrGenPrintML2',
-      scripts: { install: 'https://raw.githubusercontent.com/oodolabs/cups-drivers/master/Brother/BrGenPrintML2/install.sh' } },
-    { model: 'Brother DCP-1618W',
-      maker: 'Brother',
-      driver: 'BrGenPrintML2',
-      scripts: { install: 'https://raw.githubusercontent.com/oodolabs/cups-drivers/master/Brother/BrGenPrintML2/install.sh' },
-      driverModel: 'Brother BrGenPrintML2 for CUPS' },
-    { model: 'HP Deskjet 5820 Series, hpcups 3.16.11',
-      maker: 'HP',
-      driver: 'hplip',
-      scripts: { install: 'https://raw.githubusercontent.com/oodolabs/cups-drivers/master/HP/hplip/install.sh' } },
-    ... 
+[
+  { model: 'Brother BrGenPrintML2 for CUPS',
+    maker: 'Brother',
+    driver: 'BrGenPrintML2',
+    scripts: { install: 'https://raw.githubusercontent.com/oodolabs/cups-drivers/master/Brother/BrGenPrintML2/install.sh' } },
+  { model: 'Brother DCP-1618W',
+    maker: 'Brother',
+    driver: 'BrGenPrintML2',
+    scripts: { install: 'https://raw.githubusercontent.com/oodolabs/cups-drivers/master/Brother/BrGenPrintML2/install.sh' },
+    driverModel: 'Brother BrGenPrintML2 for CUPS' },
+  { model: 'HP Deskjet 5820 Series, hpcups 3.16.11',
+    maker: 'HP',
+    driver: 'hplip',
+    scripts: { install: 'https://raw.githubusercontent.com/oodolabs/cups-drivers/master/HP/hplip/install.sh' } },
+  ... 
 ]
 ```
 

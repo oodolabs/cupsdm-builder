@@ -1,11 +1,11 @@
-const {assert} = require('chai');
 const path = require('path');
+const {assert} = require('chai');
 const utils = require('../lib/utils');
 
 describe('utils', function () {
 	this.timeout(10000);
 
-	it('Should fetch to specified dir', function () {
+	it('Should fetch to specified dir', () => {
 		const dir = path.join(__dirname, 'tmp');
 		return utils.fetch('oodolabs/cups-drivers', {dir}).then(installed => {
 			console.log(installed);
