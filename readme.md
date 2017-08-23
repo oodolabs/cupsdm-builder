@@ -1,4 +1,4 @@
-# cupsdm-builder [![Build Status](https://travis-ci.org/taoyuan/cupsdm-builder.svg?branch=master)](https://travis-ci.org/taoyuan/cupsdm-builder)
+# cupsdm-builder [![Build Status](https://travis-ci.org/oodolabs/cupsdm-builder.svg?branch=master)](https://travis-ci.org/oodolabs/cupsdm-builder)
 
 > CUPS driver builder for CUPS driver libs
 

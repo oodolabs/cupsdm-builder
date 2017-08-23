@@ -1,9 +1,9 @@
 {
 	"name": "cupsdm-builder",
-	"version": "0.0.0",
+	"version": "0.1.0",
 	"description": "CUPS driver builder for CUPS driver libs",
 	"license": "MIT",
-	"repository": "taoyuan/cupsdm-builder",
+	"repository": "oodolabs/cupsdm-builder",
 	"author": {
 		"name": "towyuan",
 		"email": "towyuan@outlook.com",
