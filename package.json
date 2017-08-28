@@ -15,9 +15,6 @@
 	"scripts": {
 		"test": "xo --env=node --env=mocha && mocha"
 	},
-	"files": [
-		"index.js"
-	],
 	"keywords": [
 		"cups",
 		"driver",
